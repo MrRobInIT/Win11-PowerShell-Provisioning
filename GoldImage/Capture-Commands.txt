@@ -1,0 +1,7 @@
+Mount-VHD -Path "E:\Tools\GOLD_Image\VM\Win11Gold.vhdx" -ReadOnly
+$part = Get-Partition -DiskNumber <Disk#> | ? Type -eq "Basic"
+if (-not $part.DriveLetter) { $part | Set-Partition -NewDriveLetter S }
+Dism /Capture-Image /ImageFile:"E:\Tools\GOLD_Image\Images\Win11Gold.wim" /CaptureDir:S:\ /Name:"Win11-GOLD" /Description:"Win11 x64 GOLD - Hyper-V" /Compress:max /CheckIntegrity /Verify
+Dism /Split-Image /ImageFile:"E:\Tools\GOLD_Image\Images\Win11Gold.wim" /SWMFile:"E:\Tools\GOLD_Image\Images\Win11Gold.swm" /FileSize:3800
+Get-FileHash "E:\Tools\GOLD_Image\Images\Win11Gold.wim" -Algorithm SHA256
+Dismount-VHD -Path "E:\Tools\GOLD_Image\VM\Win11Gold.vhdx"
