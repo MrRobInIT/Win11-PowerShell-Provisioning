@@ -1,0 +1,3 @@
+wpeinit
+@echo off
+...
