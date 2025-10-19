@@ -1,1 +1,1 @@
-Place extracted INF driver tree here
+Place extracted INF driver tree here for MODEL_NAME. The folder name must match Win32_ComputerSystem.Model.
