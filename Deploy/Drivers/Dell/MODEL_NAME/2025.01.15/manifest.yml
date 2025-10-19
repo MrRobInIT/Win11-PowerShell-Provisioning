@@ -1,3 +1,10 @@
-model: MODEL_NAME
-package_type: Driver INF set
-...
+model: "MODEL_NAME"
+package_type: "Driver INF set"
+version: "2025.01.15"
+source:
+  url: "https://www.dell.com/support"
+  retrieved: "2025-01-15"
+contents:
+  - path: "chipset/*.inf"
+hashes: {}
+notes: "Extracted from Dell CABs; WHQL only."
