@@ -1,0 +1,2 @@
+Dism /Get-WimInfo /WimFile:"E:\Tools\GOLD_Image\Images\Win11Gold.wim"
+Dism /Get-WimInfo /WimFile:E:\Tools\GOLD_Image\Images\Win11Gold.swm /SWMFile:E:\Tools\GOLD_Image\Images\Win11Gold*.swm
