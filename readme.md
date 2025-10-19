@@ -1,4 +1,4 @@
-# Windows 11 Provisioning SOP (Dell | Hyper‑V → DISM → WinPE USB)
+# Win11 PowerShell Provisioning SOP (Dell | Hyper‑V → DISM → WinPE USB)
 
 Turnkey SOP and scripts to build and deploy a Dell‑optimized Windows 11 image:
 - Golden image in Hyper‑V
